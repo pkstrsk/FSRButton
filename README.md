@@ -1,40 +1,36 @@
-## ezButton Library for Arduino
-This library is designed to make it easy to use push button, momentary switches, toggle switch, magnetic contact switch (door sensor)..​. It is easy to use for not only beginners but also experienced users.
+## FSRButton Library for Arduino
+This library is designed to make it easy to use Force Sensitive Resistor as a button..​. It is easy to use for not only beginners but also experienced users.
 
-__ezButton__ stands for __Easy Button__
+__FSRButton__ stands for __Force Sensitive Resistor Button__
 
 Features
 ----------------------------
-* Uses the internal pull-up resistor to avoid the floating value
+* Uses the analogRead function to get a reading from the FSR
 * Supports debounce to eliminate the chattering phenomenon
 * Supports the pressed and released events
 * Supports the counting (for FALLING, RISING and BOTH)
 * Easy to use with multiple buttons
-* All functions are non-blocking 
+* All functions are non-blocking
 
 Available Examples
 ----------------------------
-* [01.SingleButton](https://arduinogetstarted.com/library/button/example/arduino-single-button)
-* [02.SingleButtonEvents](https://arduinogetstarted.com/library/button/example/arduino-single-button-events)
-* [03.SingleButtonDebounce](https://arduinogetstarted.com/library/button/example/arduino-single-button-debounce)
-* [04.SingleButtonAll](https://arduinogetstarted.com/library/button/example/arduino-single-button-all)
-* [05.MultipleButtonAll](https://arduinogetstarted.com/library/button/example/arduino-multiple-button-all)
-* [06.ButtonCount](https://arduinogetstarted.com/library/button/example/arduino-button-count)
-* [07.ButtonArray](https://arduinogetstarted.com/library/button/example/arduino-button-array)
-
+* [01.RecaroDemo](https://github.com/HamsoEngineering/RecaroDemo)
 
 Available Functions
 ----------------------------
 * setDebounceTime()
 * getState()
 * getStateRaw()
+* getRawAnalogRead()
 * isPressed()
 * isReleased()
 * setCountMode()
+* setThreshold()
 * getCount()
 * resetCount()
 * loop()
 
 References
 ----------------------------
+Based on ezButton Library
 * [ezButton Library Reference](https://arduinogetstarted.com/tutorials/arduino-button-library)

@@ -1,12 +1,12 @@
 #######################################
-# Syntax Coloring Map For ezButton
+# Syntax Coloring Map For FSRButton
 #######################################
 
 #######################################
 # Datatypes (KEYWORD1)
 #######################################
 
-ezButton	KEYWORD1
+FSRButton	KEYWORD1
 button	KEYWORD1
 
 #######################################
@@ -16,9 +16,11 @@ button	KEYWORD1
 setDebounceTime	KEYWORD2
 getState	KEYWORD2
 getStateRaw	KEYWORD2
+getRawAnalogRead KEYWORD2
 isPressed	KEYWORD2
 isReleased	KEYWORD2
 setCountMode	KEYWORD2
+setThreshold    KEYWORD2
 getCount	KEYWORD2
 resetCount	KEYWORD2
 
