@@ -46,7 +46,7 @@ void FSRButton::setThreshold(int threshold){
 
 bool FSRButton::isPressed(void)
 {
-	if (previousSteadyState == HIGH && lastSteadyState == LOW)
+	if (previousSteadyState == LOW && lastSteadyState == HIGH)
 		return true;
 	else
 		return false;
@@ -54,7 +54,7 @@ bool FSRButton::isPressed(void)
 
 bool FSRButton::isReleased(void)
 {
-	if (previousSteadyState == LOW && lastSteadyState == HIGH)
+	if (previousSteadyState == HIGH && lastSteadyState == LOW)
 		return true;
 	else
 		return false;
