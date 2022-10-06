@@ -14,7 +14,7 @@ Features
 
 Available Examples
 ----------------------------
-* [01.RecaroDemo](https://github.com/HamsoEngineering/RecaroDemo)
+* [mwe.cpp] Minimum working example
 
 Available Functions
 ----------------------------
