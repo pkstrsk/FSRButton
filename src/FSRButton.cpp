@@ -1,6 +1,6 @@
 #include <FSRButton.h>
 
-FSRButton::FSRButton(int pin, int threshold = 600)
+FSRButton::FSRButton(int pin, int threshold = 50)
 {
 	btnPin = pin;
 	trigger = threshold;
@@ -32,7 +32,8 @@ int FSRButton::getStateRaw(void)
 {
 	int state;
 	rawState = getRawAnalogRead();
-	if (rawState < trigger){
+	int rawStatePercent = map(rawState, 0, 1000, 0, 100);
+	if (rawStatePercent < trigger){
 		state = 0;
 	} else {
 		state = 1;

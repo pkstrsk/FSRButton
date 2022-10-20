@@ -4,7 +4,7 @@
 
 #define FSRPin A0  // Pin where the sensor is connected to (A0)
 
-FSRButton fsr(FSRPin, 800); // instance of the FSRButton object, 800 set as press/release threshold (600 default) MIN:0 MAX:1023
+FSRButton fsr(FSRPin, 75); // instance of the FSRButton object, 75% set as press/release threshold (50 default) MIN:0 MAX:100
 
 void setup(){
     fsr.setDebounceTime(50); // set debounce time to 50 milliseconds
