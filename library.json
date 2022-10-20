@@ -1,6 +1,6 @@
 {
     "name": "FSRButton",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "Force sensor as button library for Arduino",
     "keywords": "force, sensor, fsr, button",
     "repository":

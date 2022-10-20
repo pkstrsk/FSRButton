@@ -29,6 +29,7 @@ class FSRButton
 		int getState(void);
 		int getStateRaw(void);
 		int getRawAnalogRead(void);
+		int getRawAnalogReadPercent(void);
 		bool isPressed(void);
 		bool isReleased(void);
 		void setCountMode(int mode);

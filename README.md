@@ -22,6 +22,7 @@ Available Functions
 * getState()
 * getStateRaw()
 * getRawAnalogRead()
+* getRawAnalogReadPercent()
 * isPressed()
 * isReleased()
 * setCountMode()

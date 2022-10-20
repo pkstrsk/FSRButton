@@ -28,12 +28,16 @@ int FSRButton::getRawAnalogRead(void){
 	return analogRead(btnPin);
 }
 
+int FSRButton::getRawAnalogReadPercent(void){
+	int percent = map(getRawAnalogRead(), 0, 1023, 0, 100);
+	return percent;
+}
+
 int FSRButton::getStateRaw(void)
 {
 	int state;
-	rawState = getRawAnalogRead();
-	int rawStatePercent = map(rawState, 0, 1000, 0, 100);
-	if (rawStatePercent < trigger){
+	rawState = getRawAnalogReadPercent();
+	if (rawState < trigger){
 		state = 0;
 	} else {
 		state = 1;

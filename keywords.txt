@@ -17,6 +17,7 @@ setDebounceTime	KEYWORD2
 getState	KEYWORD2
 getStateRaw	KEYWORD2
 getRawAnalogRead KEYWORD2
+getRawAnalogReadPercent KEYWORD2
 isPressed	KEYWORD2
 isReleased	KEYWORD2
 setCountMode	KEYWORD2
